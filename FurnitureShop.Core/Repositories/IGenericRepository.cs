@@ -6,25 +6,25 @@ namespace FurnitureShop.Core.Repositories;
 public interface IGenericRepository<T>  where T : BaseEntity, new()
 {
     // Get All  
-    Task<IEnumerable<T>> GetAllAsync(bool asNoTrack = true,  Expression<Func<T, bool>> predicate = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, params string[] includes);
+    Task<IEnumerable<T>> GetAllAsync(bool asNoTrack = true,  Expression<Func<T, bool>>? predicate = null, Func<IQueryable<T>, IOrderedQueryable<T>>? orderBy = null, params string[]? includes);
     
     // GetById
-    Task<T> GetByIdAsync(int id, bool asNoTrack = true,  params string[] includes); 
-    Task<IEnumerable<T>> GetByIdsAsync(int[] id, bool asNoTrack = true,  params string[] includes);
+    Task<T?> GetByIdAsync(int id, bool asNoTrack = true,  params string[]? includes); 
+    Task<IEnumerable<T>> GetByIdsAsync(int[] ids, bool asNoTrack = true,  params string[]? includes);
     
     // Get Where Async
-    Task<IEnumerable<T>> GetWhereAsync(Expression<Func<T, bool>> expression, bool asNoTrack = true, params string[] includes);
+    Task<IEnumerable<T>> GetWhereAsync(Expression<Func<T, bool>> expression, bool asNoTrack = true, params string[]? includes);
     
     // Get First Async 
-    Task<T> GetFirstAsync(Expression<Func<T, bool>> expression, bool asNoTrack = true, params string[] includes);
+    Task<T?> GetFirstAsync(Expression<Func<T, bool>> expression, bool asNoTrack = true, params string[]? includes);
     
     // Is Exist Async
     Task<bool> IsExistAsync(Expression<Func<T, bool>> expression);
     Task<bool> IsExistAsync(int id); 
     
     // Pagination
-    Task<IEnumerable<T>> GetPagedAsync(Expression<Func<T, bool>> expression, int pageNumber = 1, bool asNoTrack = true,
-        int pageSize = 30,Func<IQueryable<T>, IOrderedQueryable<T>> oderBy = null, params string[] includes);
+    Task<IEnumerable<T>> GetPagedAsync(Expression<Func<T, bool>>? expression, int pageNumber = 1, bool asNoTrack = true,
+        int pageSize = 30,Func<IQueryable<T>, IOrderedQueryable<T>>? orderBy = null, params string[]? includes);
     
     // Create 
     Task AddAsync(T entity);

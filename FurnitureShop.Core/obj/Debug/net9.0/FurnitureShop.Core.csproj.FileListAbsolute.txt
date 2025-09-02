@@ -1,0 +1,13 @@
+/Users/samirhebibov/Desktop/FurnitureShop/FurnitureShop.Core/bin/Debug/net9.0/FurnitureShop.Core.deps.json
+/Users/samirhebibov/Desktop/FurnitureShop/FurnitureShop.Core/bin/Debug/net9.0/FurnitureShop.Core.dll
+/Users/samirhebibov/Desktop/FurnitureShop/FurnitureShop.Core/bin/Debug/net9.0/FurnitureShop.Core.pdb
+/Users/samirhebibov/Desktop/FurnitureShop/FurnitureShop.Core/obj/Debug/net9.0/FurnitureShop.Core.csproj.AssemblyReference.cache
+/Users/samirhebibov/Desktop/FurnitureShop/FurnitureShop.Core/obj/Debug/net9.0/FurnitureShop.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/samirhebibov/Desktop/FurnitureShop/FurnitureShop.Core/obj/Debug/net9.0/FurnitureShop.Core.AssemblyInfoInputs.cache
+/Users/samirhebibov/Desktop/FurnitureShop/FurnitureShop.Core/obj/Debug/net9.0/FurnitureShop.Core.AssemblyInfo.cs
+/Users/samirhebibov/Desktop/FurnitureShop/FurnitureShop.Core/obj/Debug/net9.0/FurnitureShop.Core.csproj.CoreCompileInputs.cache
+/Users/samirhebibov/Desktop/FurnitureShop/FurnitureShop.Core/obj/Debug/net9.0/FurnitureShop.Core.sourcelink.json
+/Users/samirhebibov/Desktop/FurnitureShop/FurnitureShop.Core/obj/Debug/net9.0/FurnitureShop.Core.dll
+/Users/samirhebibov/Desktop/FurnitureShop/FurnitureShop.Core/obj/Debug/net9.0/refint/FurnitureShop.Core.dll
+/Users/samirhebibov/Desktop/FurnitureShop/FurnitureShop.Core/obj/Debug/net9.0/FurnitureShop.Core.pdb
+/Users/samirhebibov/Desktop/FurnitureShop/FurnitureShop.Core/obj/Debug/net9.0/ref/FurnitureShop.Core.dll
