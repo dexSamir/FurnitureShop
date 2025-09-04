@@ -30,11 +30,21 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Dtos/CategoryDtos/CategoryCreateDto.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Dtos/CategoryDtos/CategoryGetDto.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Dtos/CategoryDtos/CategoryUpdateDto.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/OtherServices/Implements/CacheService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/OtherServices/Interfaces/ICacheService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/ServiceRegistration.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Services/Implements/CategoryService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Services/Interfaces/ICategoryService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.Core/Entities/Category.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.Core/Entities/User.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FurnitureShop.Core/Repositories/ICategoryRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.Core/Repositories/IGenericRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.DAL/Configurations/CategoryConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.DAL/Context/AppDbContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FurnitureShop.DAL/Repositories/CategoryRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.DAL/Repositories/GenericRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.DAL/RepositoryRegistration.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -72,7 +82,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.FurnitureShop.API: https">
+  <component name="RunManager" selected=".NET Launch Settings Profile.FurnitureShop.API: http">
     <configuration name="FurnitureShop.API: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/FurnitureShop.API/FurnitureShop.API.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net9.0" />
@@ -119,7 +129,7 @@
       <workItem from="1756682395211" duration="1987000" />
       <workItem from="1756800547783" duration="5475000" />
       <workItem from="1756822936421" duration="4912000" />
-      <workItem from="1757004566218" duration="5986000" />
+      <workItem from="1757004566218" duration="8067000" />
     </task>
     <servers />
   </component>

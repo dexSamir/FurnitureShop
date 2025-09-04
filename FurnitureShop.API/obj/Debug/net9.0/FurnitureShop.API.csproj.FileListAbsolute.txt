@@ -141,3 +141,6 @@
 /Users/samirhebibov/Desktop/FurnitureShop/FurnitureShop.API/obj/Debug/net9.0/FurnitureShop.API.pdb
 /Users/samirhebibov/Desktop/FurnitureShop/FurnitureShop.API/obj/Debug/net9.0/FurnitureShop.API.genruntimeconfig.cache
 /Users/samirhebibov/Desktop/FurnitureShop/FurnitureShop.API/obj/Debug/net9.0/ref/FurnitureShop.API.dll
+/Users/samirhebibov/Desktop/FurnitureShop/FurnitureShop.API/bin/Debug/net9.0/Microsoft.Extensions.Caching.StackExchangeRedis.dll
+/Users/samirhebibov/Desktop/FurnitureShop/FurnitureShop.API/bin/Debug/net9.0/Pipelines.Sockets.Unofficial.dll
+/Users/samirhebibov/Desktop/FurnitureShop/FurnitureShop.API/bin/Debug/net9.0/StackExchange.Redis.dll

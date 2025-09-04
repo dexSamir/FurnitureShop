@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "jDw8mM+tXXE=",
+  "dgSpecHash": "Skf5Fnv/Y7s=",
   "success": true,
   "projectFilePath": "/Users/samirhebibov/Desktop/FurnitureShop/FurnitureShop.BL/FurnitureShop.BL.csproj",
   "expectedPackageFiles": [
@@ -13,6 +13,7 @@
     "/Users/samirhebibov/.nuget/packages/microsoft.entityframeworkcore.relational/9.0.8/microsoft.entityframeworkcore.relational.9.0.8.nupkg.sha512",
     "/Users/samirhebibov/.nuget/packages/microsoft.extensions.caching.abstractions/9.0.8/microsoft.extensions.caching.abstractions.9.0.8.nupkg.sha512",
     "/Users/samirhebibov/.nuget/packages/microsoft.extensions.caching.memory/9.0.8/microsoft.extensions.caching.memory.9.0.8.nupkg.sha512",
+    "/Users/samirhebibov/.nuget/packages/microsoft.extensions.caching.stackexchangeredis/9.0.8/microsoft.extensions.caching.stackexchangeredis.9.0.8.nupkg.sha512",
     "/Users/samirhebibov/.nuget/packages/microsoft.extensions.configuration.abstractions/9.0.8/microsoft.extensions.configuration.abstractions.9.0.8.nupkg.sha512",
     "/Users/samirhebibov/.nuget/packages/microsoft.extensions.dependencyinjection/9.0.8/microsoft.extensions.dependencyinjection.9.0.8.nupkg.sha512",
     "/Users/samirhebibov/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/9.0.8/microsoft.extensions.dependencyinjection.abstractions.9.0.8.nupkg.sha512",
@@ -23,7 +24,10 @@
     "/Users/samirhebibov/.nuget/packages/microsoft.extensions.options/9.0.8/microsoft.extensions.options.9.0.8.nupkg.sha512",
     "/Users/samirhebibov/.nuget/packages/microsoft.extensions.primitives/9.0.8/microsoft.extensions.primitives.9.0.8.nupkg.sha512",
     "/Users/samirhebibov/.nuget/packages/npgsql/9.0.3/npgsql.9.0.3.nupkg.sha512",
-    "/Users/samirhebibov/.nuget/packages/npgsql.entityframeworkcore.postgresql/9.0.4/npgsql.entityframeworkcore.postgresql.9.0.4.nupkg.sha512"
+    "/Users/samirhebibov/.nuget/packages/npgsql.entityframeworkcore.postgresql/9.0.4/npgsql.entityframeworkcore.postgresql.9.0.4.nupkg.sha512",
+    "/Users/samirhebibov/.nuget/packages/pipelines.sockets.unofficial/2.2.8/pipelines.sockets.unofficial.2.2.8.nupkg.sha512",
+    "/Users/samirhebibov/.nuget/packages/stackexchange.redis/2.9.11/stackexchange.redis.2.9.11.nupkg.sha512",
+    "/Users/samirhebibov/.nuget/packages/system.io.pipelines/5.0.1/system.io.pipelines.5.0.1.nupkg.sha512"
   ],
   "logs": []
 }

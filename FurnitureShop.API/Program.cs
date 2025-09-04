@@ -1,3 +1,4 @@
+using FurnitureShop.BL;
 using FurnitureShop.DAL;
 using FurnitureShop.DAL.Context;
 using Microsoft.EntityFrameworkCore;
@@ -12,7 +13,8 @@ builder.Services.AddDbContext<AppDbContext>(opt =>
     opt.UseNpgsql(builder.Configuration.GetConnectionString("PostgreSQL"))); 
 
 builder.Services.AddPersistence();
-
+builder.Services.AddCache();
+builder.Services.AddServices();
 
 var app = builder.Build();
 

@@ -8,6 +8,8 @@ public static class RepositoryRegistration
 {
     public static IServiceCollection AddPersistence(this IServiceCollection services)
     {
+        services.AddScoped<ICategoryRepository, CategoryRepository>(); 
+        
         return services; 
     }
 }

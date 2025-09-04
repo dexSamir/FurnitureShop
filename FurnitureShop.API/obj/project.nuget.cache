@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Ig4OD+94LF0=",
+  "dgSpecHash": "/LD+NoWHS40=",
   "success": true,
   "projectFilePath": "/Users/samirhebibov/Desktop/FurnitureShop/FurnitureShop.API/FurnitureShop.API.csproj",
   "expectedPackageFiles": [
@@ -25,6 +25,7 @@
     "/Users/samirhebibov/.nuget/packages/microsoft.entityframeworkcore.relational/9.0.8/microsoft.entityframeworkcore.relational.9.0.8.nupkg.sha512",
     "/Users/samirhebibov/.nuget/packages/microsoft.extensions.caching.abstractions/9.0.8/microsoft.extensions.caching.abstractions.9.0.8.nupkg.sha512",
     "/Users/samirhebibov/.nuget/packages/microsoft.extensions.caching.memory/9.0.8/microsoft.extensions.caching.memory.9.0.8.nupkg.sha512",
+    "/Users/samirhebibov/.nuget/packages/microsoft.extensions.caching.stackexchangeredis/9.0.8/microsoft.extensions.caching.stackexchangeredis.9.0.8.nupkg.sha512",
     "/Users/samirhebibov/.nuget/packages/microsoft.extensions.configuration.abstractions/9.0.8/microsoft.extensions.configuration.abstractions.9.0.8.nupkg.sha512",
     "/Users/samirhebibov/.nuget/packages/microsoft.extensions.dependencyinjection/9.0.8/microsoft.extensions.dependencyinjection.9.0.8.nupkg.sha512",
     "/Users/samirhebibov/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/9.0.8/microsoft.extensions.dependencyinjection.abstractions.9.0.8.nupkg.sha512",
@@ -39,6 +40,8 @@
     "/Users/samirhebibov/.nuget/packages/mono.texttemplating/3.0.0/mono.texttemplating.3.0.0.nupkg.sha512",
     "/Users/samirhebibov/.nuget/packages/npgsql/9.0.3/npgsql.9.0.3.nupkg.sha512",
     "/Users/samirhebibov/.nuget/packages/npgsql.entityframeworkcore.postgresql/9.0.4/npgsql.entityframeworkcore.postgresql.9.0.4.nupkg.sha512",
+    "/Users/samirhebibov/.nuget/packages/pipelines.sockets.unofficial/2.2.8/pipelines.sockets.unofficial.2.2.8.nupkg.sha512",
+    "/Users/samirhebibov/.nuget/packages/stackexchange.redis/2.9.11/stackexchange.redis.2.9.11.nupkg.sha512",
     "/Users/samirhebibov/.nuget/packages/system.codedom/6.0.0/system.codedom.6.0.0.nupkg.sha512",
     "/Users/samirhebibov/.nuget/packages/system.collections.immutable/7.0.0/system.collections.immutable.7.0.0.nupkg.sha512",
     "/Users/samirhebibov/.nuget/packages/system.composition/7.0.0/system.composition.7.0.0.nupkg.sha512",
