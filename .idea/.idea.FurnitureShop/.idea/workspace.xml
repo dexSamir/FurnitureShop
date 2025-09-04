@@ -37,6 +37,7 @@
     <setting file="file://$PROJECT_DIR$/FurnitureShop.DAL/Repositories/GenericRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.DAL/RepositoryRegistration.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 3
@@ -63,6 +64,11 @@
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "editor.preferences.smartKeys_rider",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
 }]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.FurnitureShop.API: https">
@@ -111,13 +117,15 @@
       <workItem from="1756552745175" duration="970000" />
       <workItem from="1756682395211" duration="1987000" />
       <workItem from="1756800547783" duration="5475000" />
-      <workItem from="1756822936421" duration="4807000" />
+      <workItem from="1756822936421" duration="4912000" />
+      <workItem from="1757004566218" duration="2619000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
