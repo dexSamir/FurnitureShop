@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Skf5Fnv/Y7s=",
+  "dgSpecHash": "viHz9EQYPb4=",
   "success": true,
   "projectFilePath": "/Users/samirhebibov/Desktop/FurnitureShop/FurnitureShop.BL/FurnitureShop.BL.csproj",
   "expectedPackageFiles": [
+    "/Users/samirhebibov/.nuget/packages/fluentvalidation/12.0.0/fluentvalidation.12.0.0.nupkg.sha512",
+    "/Users/samirhebibov/.nuget/packages/fluentvalidation.aspnetcore/11.3.1/fluentvalidation.aspnetcore.11.3.1.nupkg.sha512",
+    "/Users/samirhebibov/.nuget/packages/fluentvalidation.dependencyinjectionextensions/12.0.0/fluentvalidation.dependencyinjectionextensions.12.0.0.nupkg.sha512",
     "/Users/samirhebibov/.nuget/packages/microsoft.aspnetcore.cryptography.internal/9.0.8/microsoft.aspnetcore.cryptography.internal.9.0.8.nupkg.sha512",
     "/Users/samirhebibov/.nuget/packages/microsoft.aspnetcore.cryptography.keyderivation/9.0.8/microsoft.aspnetcore.cryptography.keyderivation.9.0.8.nupkg.sha512",
     "/Users/samirhebibov/.nuget/packages/microsoft.aspnetcore.identity.entityframeworkcore/9.0.8/microsoft.aspnetcore.identity.entityframeworkcore.9.0.8.nupkg.sha512",

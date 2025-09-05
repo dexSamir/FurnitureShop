@@ -14,6 +14,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DpaMonitoringSettings">
+    <option name="firstShow" value="false" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -60,6 +63,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    ".NET Launch Settings Profile.FurnitureShop.API: http.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Notification.DisplayName-DoNotAsk-git.bad.executable": "Git is not installed",
     "Notification.DoNotAsk-git.bad.executable": "true",
@@ -129,7 +133,7 @@
       <workItem from="1756682395211" duration="1987000" />
       <workItem from="1756800547783" duration="5475000" />
       <workItem from="1756822936421" duration="4912000" />
-      <workItem from="1757004566218" duration="8067000" />
+      <workItem from="1757004566218" duration="8285000" />
     </task>
     <servers />
   </component>
