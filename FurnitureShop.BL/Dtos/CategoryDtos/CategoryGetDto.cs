@@ -9,6 +9,6 @@ public class CategoryGetDto
     public bool IsUpdated { get; set; }
     public DateTime CreatedTime { get; set; }
     public DateTime? UpdatedTime { get; set; }
-    public int? ParentId { get; set; } 
-    public ICollection<CategoryGetDto>? Children { get; set; } 
+    public int? ParentCategoryId { get; set; } 
+    public ICollection<CategoryGetDto>? Subcategories { get; set; } 
 }

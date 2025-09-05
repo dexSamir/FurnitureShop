@@ -11,9 +11,9 @@ public class CategoryCreateDtoValidator : AbstractValidator<CategoryCreateDto>
             .NotEmpty().WithMessage("Name is required")
             .MaximumLength(100).WithMessage("Name must not exceed 100 characters");
         
-        RuleFor(x => x.ParentId)
+        RuleFor(x => x.ParentCategoryId)
             .GreaterThanOrEqualTo(0)
-            .When(x => x.ParentId.HasValue)
+            .When(x => x.ParentCategoryId.HasValue)
             .WithMessage("ParentId cannot be negative");
     }
 }

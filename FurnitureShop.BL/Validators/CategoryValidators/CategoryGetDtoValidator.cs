@@ -24,7 +24,7 @@ public class CategoryGetDtoValidator :  AbstractValidator<CategoryGetDto>
             .When(x => x.UpdatedTime.HasValue)
             .WithMessage("UpdatedTime cannot be earlier than CreatedTime");
 
-        RuleForEach(x => x.Children)
+        RuleForEach(x => x.Subcategories)
             .SetValidator(new CategoryGetDtoValidator());
     }
 }

@@ -4,6 +4,6 @@ public class CategoryCreateDto
 {
     public string Name { get; set; }
     public bool IsPrimary { get; set; }
-    public int? ParentId { get; set; }
-    public ICollection<CategoryGetDto>? Children { get; set; }
+    public int? ParentCategoryId { get; set; }
+    public ICollection<CategoryGetDto>? Subcategories { get; set; }
 }

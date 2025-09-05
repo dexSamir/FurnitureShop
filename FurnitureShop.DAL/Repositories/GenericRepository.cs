@@ -48,7 +48,7 @@ public class GenericRepository<T>(AppDbContext context) :  IGenericRepository<T>
         => await Table.AnyAsync(expression);
     
     // Is Exist Async WithId 
-    public async  Task<bool> IsExistAsync(int id)
+    public async Task<bool> IsExistAsync(int id)
         => await Table.AnyAsync(x => x.Id == id);
     
     // Pagination
