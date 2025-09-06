@@ -42,10 +42,10 @@ public class CategoryService(IMapper mapper, ICategoryRepository repo, ICacheSer
     public async Task<IEnumerable<CategoryGetDto>> CreateBulkAsync(IEnumerable<CategoryCreateDto> dtos)
     {
         var data = mapper.Map<IEnumerable<Category>>(dtos);
-        
-        foreach(var dto in dtos) 
-            if (dto.ParentCategoryId.HasValue && dto.ParentCategoryId > 0)
-                if(!await repo.IsExistAsync(dto.ParentCategoryId.Value)) throw new NotFoundException<Category>();
+        int[] ids = dtos.Where(x=> x.ParentCategoryId.HasValue).Select(x => x.ParentCategoryId.Value).ToArray();         
+            
+        if(!await repo.IsExistRangeAsync(ids))
+            throw new NotFoundException<Category>();
         
         await repo.AddRangeAsync(data);
         await repo.SaveAsync();

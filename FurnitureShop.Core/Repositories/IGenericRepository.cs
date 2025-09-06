@@ -20,6 +20,7 @@ public interface IGenericRepository<T>  where T : BaseEntity, new()
     
     // Is Exist Async
     Task<bool> IsExistAsync(Expression<Func<T, bool>> expression);
+    Task<bool> IsExistRangeAsync(int[] ids);
     Task<bool> IsExistAsync(int id); 
     
     // Pagination

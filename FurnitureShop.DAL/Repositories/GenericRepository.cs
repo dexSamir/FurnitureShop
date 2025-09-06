@@ -50,6 +50,13 @@ public class GenericRepository<T>(AppDbContext context) :  IGenericRepository<T>
     // Is Exist Async WithId 
     public async Task<bool> IsExistAsync(int id)
         => await Table.AnyAsync(x => x.Id == id);
+
+    public async Task<bool> IsExistRangeAsync(int[] ids)
+    { 
+        var count = await Table.CountAsync(x => ids.Contains(x.Id));
+        return count == ids.Length;
+    }
+
     
     // Pagination
     public async Task<IEnumerable<T>> GetPagedAsync(Expression<Func<T, bool>>? expression, int pageNumber = 1, bool asNoTrack = true, int pageSize = 30,
