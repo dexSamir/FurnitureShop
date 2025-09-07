@@ -1,35 +1,46 @@
-using Microsoft.AspNetCore.Http;
+using FurnitureShop.BL.Dtos.CategoryDtos;
+using FurnitureShop.BL.Services.Interfaces;
+using FurnitureShop.BL.Utilities.Enums;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FurnitureShop.API.Controllers;
 [Route("api/[controller]")]
 [ApiController]
-public class CategoriesController : ControllerBase
+public class CategoriesController(ICategoryService service) : ControllerBase
 {
     [HttpGet]
-    public IEnumerable<string> Get()
+    public async Task<IActionResult> GetAll()
     {
-        return new string[] { "value1", "value2" };
+        return Ok(await service.GetAllAsync());
     }
 
     [HttpGet("{id}")]
-    public string Get(int id)
+    public async Task<IActionResult> GetById(int id)
     {
-        return "value";
+        return Ok(await service.GetByIdAsync(id));
     }
 
     [HttpPost]
-    public void Post([FromBody] string value)
+    public async Task<IActionResult> Create([FromBody] CategoryCreateDto dto)
     {
+        return Ok(await service.CreateAsync(dto));
     }
 
-    [HttpPut("{id}")]
-    public void Put(int id, [FromBody] string value)
+    [HttpPost]
+    public async Task<IActionResult> CreateRange( IEnumerable<CategoryCreateDto> dtos)
     {
+        return Ok(await service.CreateBulkAsync(dtos)); 
     }
 
-    [HttpDelete("{id}")]
-    public void Delete(int id)
+    [HttpPatch("{id}")]
+    public async Task<IActionResult> Update(int id,  [FromBody] CategoryUpdateDto dto)
     {
+        return Ok(await service.UpdateAsync(id, dto)); 
+    }
+
+    [HttpDelete("{dType}")]
+    public async Task<IActionResult> Delete([FromQuery] int[] ids, EDeleteType dType)
+    {
+        return Ok(await service.DeleteAsync(ids, dType));
     }
 }

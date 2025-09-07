@@ -2,6 +2,7 @@ using FurnitureShop.BL.OtherServices.Implements;
 using FurnitureShop.BL.OtherServices.Interfaces;
 using FurnitureShop.BL.Services.Implements;
 using FurnitureShop.BL.Services.Interfaces;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace FurnitureShop.BL;
@@ -16,11 +17,17 @@ public static class ServiceRegistration
         return services;
     }
 
+    public static IServiceCollection AddMapper(this IServiceCollection services)
+    {
+        services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+        return services;
+    }
+    
     public static IServiceCollection AddCache(this IServiceCollection services)
     {
         services.AddStackExchangeRedisCache(options =>
         {
-            options.Configuration = "http://localhost:5101";
+            options.Configuration = "https://localhost:7126";
             options.InstanceName = "FurnitureShop_"; 
         }); 
         return services;
