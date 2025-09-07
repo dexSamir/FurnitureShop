@@ -27,7 +27,7 @@ public static class ServiceRegistration
     {
         services.AddStackExchangeRedisCache(options =>
         {
-            options.Configuration = "https://localhost:7126";
+            options.Configuration = "localhost:6379";
             options.InstanceName = "FurnitureShop_"; 
         }); 
         return services;

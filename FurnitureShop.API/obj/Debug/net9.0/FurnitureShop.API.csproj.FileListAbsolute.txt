@@ -160,10 +160,6 @@
 /Users/samirhebibov/Desktop/FurnitureShop/FurnitureShop.API/bin/Debug/net9.0/Microsoft.CodeAnalysis.Scripting.dll
 /Users/samirhebibov/Desktop/FurnitureShop/FurnitureShop.API/bin/Debug/net9.0/Microsoft.DiaSymReader.dll
 /Users/samirhebibov/Desktop/FurnitureShop/FurnitureShop.API/bin/Debug/net9.0/Microsoft.DotNet.Scaffolding.Shared.dll
-/Users/samirhebibov/Desktop/FurnitureShop/FurnitureShop.API/bin/Debug/net9.0/Microsoft.IdentityModel.Abstractions.dll
-/Users/samirhebibov/Desktop/FurnitureShop/FurnitureShop.API/bin/Debug/net9.0/Microsoft.IdentityModel.JsonWebTokens.dll
-/Users/samirhebibov/Desktop/FurnitureShop/FurnitureShop.API/bin/Debug/net9.0/Microsoft.IdentityModel.Logging.dll
-/Users/samirhebibov/Desktop/FurnitureShop/FurnitureShop.API/bin/Debug/net9.0/Microsoft.IdentityModel.Tokens.dll
 /Users/samirhebibov/Desktop/FurnitureShop/FurnitureShop.API/bin/Debug/net9.0/Microsoft.NET.StringTools.dll
 /Users/samirhebibov/Desktop/FurnitureShop/FurnitureShop.API/bin/Debug/net9.0/Microsoft.VisualStudio.Web.CodeGeneration.dll
 /Users/samirhebibov/Desktop/FurnitureShop/FurnitureShop.API/bin/Debug/net9.0/Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
@@ -272,3 +268,6 @@
 /Users/samirhebibov/Desktop/FurnitureShop/FurnitureShop.API/bin/Debug/net9.0/tr/Microsoft.CodeAnalysis.Scripting.resources.dll
 /Users/samirhebibov/Desktop/FurnitureShop/FurnitureShop.API/bin/Debug/net9.0/zh-Hans/Microsoft.CodeAnalysis.Scripting.resources.dll
 /Users/samirhebibov/Desktop/FurnitureShop/FurnitureShop.API/bin/Debug/net9.0/zh-Hant/Microsoft.CodeAnalysis.Scripting.resources.dll
+/Users/samirhebibov/Desktop/FurnitureShop/FurnitureShop.API/bin/Debug/net9.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/samirhebibov/Desktop/FurnitureShop/FurnitureShop.API/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/samirhebibov/Desktop/FurnitureShop/FurnitureShop.API/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerUI.dll

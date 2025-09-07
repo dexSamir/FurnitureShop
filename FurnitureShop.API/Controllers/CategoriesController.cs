@@ -4,7 +4,7 @@ using FurnitureShop.BL.Utilities.Enums;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FurnitureShop.API.Controllers;
-[Route("api/[controller]")]
+[Route("api/[controller]/[action]")]
 [ApiController]
 public class CategoriesController(ICategoryService service) : ControllerBase
 {
@@ -38,7 +38,7 @@ public class CategoriesController(ICategoryService service) : ControllerBase
         return Ok(await service.UpdateAsync(id, dto)); 
     }
 
-    [HttpDelete("{dType}")]
+    [HttpDelete("delete/{dType}")]
     public async Task<IActionResult> Delete([FromQuery] int[] ids, EDeleteType dType)
     {
         return Ok(await service.DeleteAsync(ids, dType));
