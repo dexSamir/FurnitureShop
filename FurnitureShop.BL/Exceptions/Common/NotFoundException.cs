@@ -14,7 +14,7 @@ public class NotFoundException : BaseException
 public class NotFoundException<T> : NotFoundException
 {
     public NotFoundException(string? errorCode = null, int code = 0)
-        : base($"{typeof(T).Name} not found", errorCode, code)
+        : base($"{typeof(T).Name} is not found", errorCode, code)
     {
     }
 }

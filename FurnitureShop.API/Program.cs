@@ -1,5 +1,4 @@
-using FurnitureShop.API.Extensions;
-using FurnitureShop.API.Middlewares;
+using FluentValidation.AspNetCore;
 using FurnitureShop.BL;
 using FurnitureShop.DAL;
 using FurnitureShop.DAL.Context;
@@ -7,8 +6,8 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddOpenApi();
 builder.Services.AddControllers(); 
+builder.Services.AddOpenApi();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -18,7 +17,8 @@ builder.Services.AddDbContext<AppDbContext>(opt =>
 builder.Services.AddPersistence();
 builder.Services.AddCache();
 builder.Services.AddServices();
-builder.Services.AddMapper(); 
+builder.Services.AddMapper();
+builder.Services.AddFluentValidation(); 
 // builder.Services.ConfigureCustomApiBehavior();
 
 var app = builder.Build();
@@ -27,12 +27,9 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI(c =>
-    {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
-    });
+    app.UseSwaggerUI();
 }
-// app.UseDeveloperExceptionPage();
+app.UseDeveloperExceptionPage();
 app.UseHttpsRedirection();
 // app.UseMiddleware<ExceptionMiddleware>();
 app.UseAuthorization();

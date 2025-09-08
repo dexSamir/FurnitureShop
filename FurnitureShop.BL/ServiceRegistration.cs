@@ -1,3 +1,5 @@
+using FluentValidation;
+using FluentValidation.AspNetCore;
 using FurnitureShop.BL.OtherServices.Implements;
 using FurnitureShop.BL.OtherServices.Interfaces;
 using FurnitureShop.BL.Services.Implements;
@@ -14,6 +16,13 @@ public static class ServiceRegistration
         services.AddScoped<ICategoryService, CategoryService>(); 
         
         services.AddScoped<ICacheService, CacheService>();
+        return services;
+    }
+    
+    public static IServiceCollection AddFluentValidation(this IServiceCollection services)
+    {
+        services.AddFluentValidationAutoValidation();
+        services.AddValidatorsFromAssemblyContaining(typeof(ServiceRegistration));
         return services;
     }
 

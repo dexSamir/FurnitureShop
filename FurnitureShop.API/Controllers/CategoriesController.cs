@@ -38,7 +38,7 @@ public class CategoriesController(ICategoryService service) : ControllerBase
         return Ok(await service.UpdateAsync(id, dto)); 
     }
 
-    [HttpDelete("delete/{dType}")]
+    [HttpDelete("{dType}")]
     public async Task<IActionResult> Delete([FromQuery] int[] ids, EDeleteType dType)
     {
         return Ok(await service.DeleteAsync(ids, dType));

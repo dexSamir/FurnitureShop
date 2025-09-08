@@ -31,6 +31,5 @@ public class CategoryConfiguration :  IEntityTypeConfiguration<Category>
         builder.HasIndex(x => x.Name);
         builder.HasIndex(x => x.IsDeleted);
         builder.HasIndex(x => x.ParentCategoryId);
-        builder.HasIndex(x => x.IsPrimary);
     }
 }

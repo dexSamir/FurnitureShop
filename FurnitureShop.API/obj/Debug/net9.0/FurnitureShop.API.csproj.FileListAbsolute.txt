@@ -271,3 +271,4 @@
 /Users/samirhebibov/Desktop/FurnitureShop/FurnitureShop.API/bin/Debug/net9.0/Swashbuckle.AspNetCore.Swagger.dll
 /Users/samirhebibov/Desktop/FurnitureShop/FurnitureShop.API/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerGen.dll
 /Users/samirhebibov/Desktop/FurnitureShop/FurnitureShop.API/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/samirhebibov/Desktop/FurnitureShop/FurnitureShop.API/bin/Debug/net9.0/Newtonsoft.Json.Bson.dll
