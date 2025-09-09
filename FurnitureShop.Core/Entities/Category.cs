@@ -8,4 +8,6 @@ public class Category : BaseEntity
     public ICollection<Category>? Subcategories { get; set; } 
     public int? ParentCategoryId { get; set; }
     public Category? ParentCategory { get; set; } 
+    
+    public ICollection<Product>? Products { get; set; } 
 }

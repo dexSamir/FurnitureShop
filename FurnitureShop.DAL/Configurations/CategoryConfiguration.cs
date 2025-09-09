@@ -17,7 +17,12 @@ public class CategoryConfiguration :  IEntityTypeConfiguration<Category>
         builder.HasOne(x => x.ParentCategory)
             .WithMany(x => x.Subcategories)
             .HasForeignKey(x=> x.ParentCategoryId)
-            .OnDelete(DeleteBehavior.Cascade);
+            .OnDelete(DeleteBehavior.Restrict);
+        
+        builder.HasMany(c => c.Products)
+            .WithOne(p => p.Category)
+            .HasForeignKey(p => p.CategoryId)
+            .OnDelete(DeleteBehavior.Restrict);
         
         builder.Property(c => c.CreatedTime)
             .HasColumnType("timestamp with time zone")
@@ -26,7 +31,6 @@ public class CategoryConfiguration :  IEntityTypeConfiguration<Category>
         builder.Property(c => c.UpdatedTime)
             .IsRequired(false)
             .HasColumnType("timestamp with time zone");
-
         
         builder.HasIndex(x => x.Name);
         builder.HasIndex(x => x.IsDeleted);
