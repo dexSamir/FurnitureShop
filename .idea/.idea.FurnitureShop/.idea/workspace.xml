@@ -42,12 +42,17 @@
     <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Exceptions/BaseException.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Exceptions/Common/EmptyIdsException.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Exceptions/Common/NotFoundException.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Extensions/FileExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/OtherServices/Implements/CacheService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/OtherServices/Interfaces/ICacheService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Profiles/CategoryProfile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/ServiceRegistration.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Services/Implements/CategoryService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Services/Implements/ProductImageService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Services/Implements/ProductService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Services/Interfaces/ICategoryService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Services/Interfaces/IProductImageService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Services/Interfaces/IProductService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Utilities/Enums/EDeleteType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Validators/CategoryValidators/CategoryCreateDtoValidator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Validators/CategoryValidators/CategoryGetDtoValidator.cs" root0="FORCE_HIGHLIGHTING" />
@@ -66,6 +71,8 @@
     <setting file="file://$PROJECT_DIR$/FurnitureShop.DAL/Context/AppDbContext.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.DAL/Repositories/CategoryRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.DAL/Repositories/GenericRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FurnitureShop.DAL/Repositories/ProductImageRepository.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FurnitureShop.DAL/Repositories/ProductRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.DAL/RepositoryRegistration.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -167,7 +174,8 @@
       <workItem from="1757257934052" duration="272000" />
       <workItem from="1757275701478" duration="2460000" />
       <workItem from="1757352043616" duration="6204000" />
-      <workItem from="1757414298060" duration="1483000" />
+      <workItem from="1757414298060" duration="1761000" />
+      <workItem from="1757522600080" duration="666000" />
     </task>
     <servers />
   </component>
