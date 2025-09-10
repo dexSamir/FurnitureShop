@@ -6,7 +6,7 @@ public static class FileExtensions
     public static bool IsValidType(this IFormFile file, string type)
         => file.FileName.StartsWith(type);
 
-    public static bool IsValidImage(this IFormFile file, int mb)
+    public static bool IsValidSize(this IFormFile file, int mb)
         => file.Length <= mb * 1024 * 1024;
 
     public static async Task<string> UploadAsync(this IFormFile file, params string[] paths)

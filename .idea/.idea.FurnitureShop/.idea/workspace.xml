@@ -33,19 +33,28 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/FurnitureShop.API/Controllers/ProductImageController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.API/Extensions/ApiBehaviorExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.API/Middlewares/ExceptionMiddleware.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Constants/CacheKeys.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Dtos/CategoryDtos/CategoryCreateDto.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Dtos/CategoryDtos/CategoryGetDto.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Dtos/CategoryDtos/CategoryUpdateDto.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Dtos/ProductImageDto/ProductImageCreateDto.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Dtos/ProductImageDto/ProductImageGetDto.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Dtos/ProductImageDto/ProductImageUpdateDto.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Exceptions/BaseException.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Exceptions/Common/EmptyIdsException.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Exceptions/Common/NotFoundException.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Exceptions/Image/UnsupportedFileSizeException.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Exceptions/Image/UnsupportedFileTypeException.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Extensions/FileExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/OtherServices/Implements/CacheService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/OtherServices/Implements/FileService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/OtherServices/Interfaces/ICacheService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/OtherServices/Interfaces/IFileService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Profiles/CategoryProfile.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Profiles/ProductImageProfile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/ServiceRegistration.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Services/Implements/CategoryService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Services/Implements/ProductImageService.cs" root0="FORCE_HIGHLIGHTING" />
@@ -57,6 +66,9 @@
     <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Validators/CategoryValidators/CategoryCreateDtoValidator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Validators/CategoryValidators/CategoryGetDtoValidator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Validators/CategoryValidators/CategoryUpdateDtoValidator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Validators/ProductImageValidators/ProductImageCreateDtoValidator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Validators/ProductImageValidators/ProductImageGetDtoValidator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Validators/ProductImageValidators/ProductImageUpdateDtoValidator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.Core/Entities/Category.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.Core/Entities/Product.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.Core/Entities/ProductImage.cs" root0="FORCE_HIGHLIGHTING" />
@@ -175,7 +187,7 @@
       <workItem from="1757275701478" duration="2460000" />
       <workItem from="1757352043616" duration="6204000" />
       <workItem from="1757414298060" duration="1761000" />
-      <workItem from="1757522600080" duration="666000" />
+      <workItem from="1757522600080" duration="4345000" />
     </task>
     <servers />
   </component>
