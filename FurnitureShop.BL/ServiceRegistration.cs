@@ -13,7 +13,8 @@ public static class ServiceRegistration
     public static IServiceCollection AddServices(this IServiceCollection services)
     {
         services.AddScoped<ICategoryService, CategoryService>();
-        services.AddScoped<IProductImageService, IProductImageService>(); 
+        services.AddScoped<IProductImageService, IProductImageService>();
+        services.AddScoped<IProductService, ProductService>(); 
         
         services.AddScoped<ICacheService, CacheService>();
         services.AddScoped<IFileService, FileService>(); 
