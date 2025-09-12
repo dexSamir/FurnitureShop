@@ -5,13 +5,14 @@ namespace FurnitureShop.BL.Services.Interfaces;
 
 public interface IProductService
 {
-    Task<IEnumerable<ProductGetDto>> GetAllAsync(ProductFilterDto filter);
-    Task<ProductGetDto> GetByIdAsync(int id);
-    Task<ProductDetailDto> GetByIdAsync(Guid publicId);
+    Task<IEnumerable<ProductGetDto>> GetAllAsync(ProductFilterDto dto);
+    Task<ProductDetailDto> GetByIdAsync(int id);
+    Task<ProductDetailDto> GetByPublicIdAsync(Guid publicId);
     
     Task<ProductDetailDto> CreateAsync(ProductCreateDto dto);
     Task<IEnumerable<ProductGetDto>> CreateBulkAsync(IEnumerable<ProductCreateDto> dtos); 
-    Task<ProductDetailDto> UpdateAsync(ProductUpdateDto dto);
+    Task<ProductDetailDto> UpdateAsync(int id, ProductUpdateDto dto);
+    
 
     Task<bool> DeleteAsync(int[] ids, EDeleteType dType); 
 }

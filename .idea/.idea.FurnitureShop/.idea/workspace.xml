@@ -34,6 +34,7 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/FurnitureShop.API/Controllers/ProductImageController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FurnitureShop.API/Controllers/ProductsController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.API/Extensions/ApiBehaviorExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.API/Middlewares/ExceptionMiddleware.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Constants/CacheKeys.cs" root0="FORCE_HIGHLIGHTING" />
@@ -42,6 +43,7 @@
     <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Dtos/CategoryDtos/CategoryUpdateDto.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Dtos/ProductDtos/ProductCreateDto.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Dtos/ProductDtos/ProductDetailDto.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Dtos/ProductDtos/ProductFilterDto.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Dtos/ProductDtos/ProductGetDto.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Dtos/ProductDtos/ProductUpdateDto.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Dtos/ProductImageDto/ProductImageCreateDto.cs" root0="FORCE_HIGHLIGHTING" />
@@ -50,6 +52,7 @@
     <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Exceptions/BaseException.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Exceptions/Common/EmptyIdsException.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Exceptions/Common/NotFoundException.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Exceptions/Common/UnsupportedDeleteTypeException.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Exceptions/Image/UnsupportedFileSizeException.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Exceptions/Image/UnsupportedFileTypeException.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Extensions/FileExtensions.cs" root0="FORCE_HIGHLIGHTING" />
@@ -67,6 +70,7 @@
     <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Services/Interfaces/IProductImageService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Services/Interfaces/IProductService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Utilities/Enums/EDeleteType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Utilities/Enums/ESortDirection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Validators/CategoryValidators/CategoryCreateDtoValidator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Validators/CategoryValidators/CategoryGetDtoValidator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/FurnitureShop.BL/Validators/CategoryValidators/CategoryUpdateDtoValidator.cs" root0="FORCE_HIGHLIGHTING" />
@@ -192,7 +196,8 @@
       <workItem from="1757352043616" duration="6204000" />
       <workItem from="1757414298060" duration="1761000" />
       <workItem from="1757522600080" duration="4562000" />
-      <workItem from="1757618792823" duration="645000" />
+      <workItem from="1757618792823" duration="957000" />
+      <workItem from="1757680348433" duration="1661000" />
     </task>
     <servers />
   </component>
