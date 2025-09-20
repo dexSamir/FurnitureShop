@@ -14,9 +14,9 @@ namespace FurnitureShop.BL.Services.Implements;
 
 public class ProductImageService(ICacheService cache, IProductImageRepository repo, IFileService fileService, IMapper mapper, IProductRepository productRepo) : IProductImageService
 {
-    public async Task<IEnumerable<ProductImageGetDto>> GetImagesByProductId(int productId)
+    public async Task<IEnumerable<ProductImageGetDto>> GetImagesByProductId(Guid productId)
     {
-        return mapper.Map<IEnumerable<ProductImageGetDto>>(await cache.GetOrSetAsync(CacheKeys.ProductImage, async () => await repo.GetFirstAsync(x=> x.ProductId == productId), TimeSpan.FromMinutes(2)));
+        return mapper.Map<IEnumerable<ProductImageGetDto>>(await cache.GetOrSetAsync(CacheKeys.ProductImage, async () => await repo.GetFirstAsync(x=> x.Product.PublicId == productId), TimeSpan.FromMinutes(2)));
     }
     
     public async Task<ProductImageGetDto?> GetImageById(int id)
@@ -25,9 +25,9 @@ public class ProductImageService(ICacheService cache, IProductImageRepository re
         return mapper.Map<ProductImageGetDto>(await repo.GetByIdAsync(id)); 
     }
     
-    public async Task AddImagesAsync(int productId, IList<ProductImageCreateDto> dtos)
+    public async Task AddImagesAsync(Guid productId, IList<ProductImageCreateDto> dtos)
     {
-        if (!await productRepo.IsExistAsync(productId))
+        if (!await repo.IsExistAsync(x=> x.Product!.PublicId == productId))
             throw new NotFoundException<Product>();
 
         MarkPrimaryAndSecondary(dtos);

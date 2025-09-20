@@ -15,10 +15,10 @@ builder.Services.AddDbContext<AppDbContext>(opt =>
     opt.UseNpgsql(builder.Configuration.GetConnectionString("PostgreSQL"))); 
 
 builder.Services.AddPersistence();
-builder.Services.AddCache();
 builder.Services.AddServices();
 builder.Services.AddMapper();
 builder.Services.AddFluentValidation(); 
+builder.Services.AddCache();
 // builder.Services.ConfigureCustomApiBehavior();
 
 var app = builder.Build();

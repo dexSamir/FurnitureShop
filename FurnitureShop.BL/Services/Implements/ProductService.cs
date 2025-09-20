@@ -33,21 +33,21 @@ public class ProductService(IProductRepository repo, IMapper mapper) : IProductS
             true,
             dto.PageSize,
             orderBy,
-            "Categories", "Images"); 
+            "Category", "Images"); 
         
         return mapper.Map<IEnumerable<ProductGetDto>>(products);
     }
 
     public async Task<ProductDetailDto> GetByIdAsync(int id)
     {
-        var data = await repo.GetByIdAsync(id, true, "Categories", "Images") ?? 
+        var data = await repo.GetByIdAsync(id, true, "Category", "Images") ?? 
                    throw new NotFoundException<Product>();
         return mapper.Map<ProductDetailDto>(data); 
     }
 
     public async Task<ProductDetailDto> GetByPublicIdAsync(Guid publicId)
     {
-        var data = await repo.GetFirstAsync(x=> x.PublicId == publicId, true, "Categories", "Images") ?? 
+        var data = await repo.GetFirstAsync(x=> x.PublicId == publicId, true, "Category", "Images") ?? 
                    throw new NotFoundException<Product>();
         
         return mapper.Map<ProductDetailDto>(data); 
@@ -76,9 +76,9 @@ public class ProductService(IProductRepository repo, IMapper mapper) : IProductS
         return mapper.Map<IEnumerable<ProductGetDto>>(data);
     }
 
-    public async Task<ProductDetailDto> UpdateAsync(int id, ProductUpdateDto dto)
+    public async Task<ProductDetailDto> UpdateAsync(Guid publicId, ProductUpdateDto dto)
     {
-        var existing = await repo.GetByIdAsync(id, false) ?? throw new NotFoundException<Product>();
+        var existing = await repo.GetFirstAsync(x=> x.PublicId == publicId, false) ?? throw new NotFoundException<Product>();
 
         mapper.Map(dto, existing);
         existing.UpdatedTime = DateTime.UtcNow;
@@ -89,16 +89,16 @@ public class ProductService(IProductRepository repo, IMapper mapper) : IProductS
         return mapper.Map<ProductDetailDto>(existing);
     }
 
-    public async Task<bool> DeleteAsync(int[] ids, EDeleteType dType)
+    public async Task<bool> DeleteAsync(Guid[] publicIds, EDeleteType dType)
     {
-        if (ids.Length == 0)
+        if (publicIds.Length == 0)
             throw new ArgumentException("Hec bir id daxil edilmeyib!");
 
-        var existingIds = (await repo.GetByIdsAsync(ids, false))
+        var existingIds = (await repo.GetWhereAsync(x=> publicIds.Contains(x.PublicId), false))
             .Select(x => x.Id)
             .ToArray();
         
-        var missingIds = ids.Except(existingIds).ToArray();
+        var missingIds = existingIds.Except(existingIds).ToArray();
 
         if (missingIds.Any())
             throw new NotFoundException<Product>($"Products not found with ids: {string.Join(",", missingIds)}");
@@ -107,22 +107,22 @@ public class ProductService(IProductRepository repo, IMapper mapper) : IProductS
         switch (dType)
         {
             case EDeleteType.Soft:
-                await repo.SoftDeleteRangeAsync(ids);
+                await repo.SoftDeleteRangeAsync(existingIds);
                 break;
 
             case EDeleteType.Reverse:
-                await repo.ReverseDeleteRangeAsync(ids);
+                await repo.ReverseDeleteRangeAsync(existingIds);
                 break; 
 
             case EDeleteType.Hard:
-                await repo.HardDeleteRangeAsync(ids);
+                await repo.HardDeleteRangeAsync(existingIds);
                 break;
 
             default:
                 throw new UnsupportedDeleteTypeException($"Delete type '{dType}' is not supported.");
         }
 
-        bool success = await repo.SaveAsync() == ids.Length;
+        bool success = await repo.SaveAsync() == existingIds.Length;
 
         return success;
     }

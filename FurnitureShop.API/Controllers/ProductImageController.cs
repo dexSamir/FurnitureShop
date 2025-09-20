@@ -8,20 +8,20 @@ namespace FurnitureShop.API.Controllers;
 [ApiController]
 public class ProductImageController(IProductImageService service) : ControllerBase
 {
-    [HttpGet("{productId}")]
-    public async Task<IActionResult> GetImagesByProductId(int productId)
+    [HttpGet("/GetImagesByProductId/{productId}")]
+    public async Task<IActionResult> GetImagesByProductId(Guid productId)
     {
         return Ok(await service.GetImagesByProductId(productId));
     }
 
-    [HttpGet("{imageId}")]
+    [HttpGet("/GetByImageId/{imageId}")]
     public async Task<IActionResult> GetById(int imageId)
     {
         return Ok(await service.GetImageById(imageId));
     }
 
-    [HttpPost]
-    public async Task<IActionResult> AddImages(int productId,[FromForm] IList<ProductImageCreateDto> dtos)
+    [HttpPost("{productId}")]
+    public async Task<IActionResult> AddImages(Guid productId,[FromForm] IList<ProductImageCreateDto> dtos)
     {
         await service.AddImagesAsync(productId, dtos);
         return Ok();

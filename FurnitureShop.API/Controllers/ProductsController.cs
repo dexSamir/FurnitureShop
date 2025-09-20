@@ -4,7 +4,7 @@ using FurnitureShop.BL.Utilities.Enums;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FurnitureShop.API.Controllers;
-[Route("api/[controller]")]
+[Route("api/[controller]/[action]")]
 [ApiController]
 public class ProductsController(IProductService service): ControllerBase
 {
@@ -12,12 +12,6 @@ public class ProductsController(IProductService service): ControllerBase
     public async Task<IActionResult> GetAllAsync([FromQuery] ProductFilterDto dto)
     {
         return Ok(await service.GetAllAsync(dto));
-    }
-
-    [HttpGet("{id}")]
-    public async Task<IActionResult> GetById(int id)
-    {
-        return Ok(await service.GetByIdAsync(id));
     }
     
     [HttpGet("{publicId}")]
@@ -39,13 +33,13 @@ public class ProductsController(IProductService service): ControllerBase
     }
 
     [HttpPatch("{id}")]
-    public async Task<IActionResult> Update(int id, ProductUpdateDto dto)
+    public async Task<IActionResult> Update(Guid id, ProductUpdateDto dto)
     {
         return Ok(await service.UpdateAsync(id, dto));
     }
 
     [HttpDelete("{deleteType}")]
-    public async Task<IActionResult> Delete([FromQuery] int[] ids, EDeleteType deleteType)
+    public async Task<IActionResult> Delete([FromQuery] Guid[] ids, EDeleteType deleteType)
     {
         return Ok(await service.DeleteAsync(ids, deleteType));
     }
